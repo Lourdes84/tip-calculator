@@ -11,10 +11,9 @@ For this challenge I used HTML, CSS and JavaScript.
 
 The challenge is to build out  tip calculator app and get it looking as close to the design as possible.
 
-### Links
+### Link
 
-- Solution CODE: [https://github.com/lougc/tip-calculator-app-main]
-- Live Site URL: [https://lougc.github.io/tip-calculator-app-main/]
+- Live Site URL: [https://lourdes84.github.io/tip-calculator/]
 
 ## My process
 
