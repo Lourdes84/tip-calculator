@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Tip calculator app</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <div class="title">
+    <p>SPLI</p>
+    <p>TTER</p>
+  </div>
+
+  <!-- MAIN WIDGET -->
+
+  <main class="content">
+
+    <!-- SECTION CALCULATE -->
+
+    <section class="content__calculate">
+
+      <div class="content__calculate__bill">
+        <label for="bill">Bill</label>
+        <i class="fas fa-dollar-sign icon"></i>
+        <input type="number" class="calculate__input" id="bill" name="bill" min="0" onkeyup=disabledButton()>
+      </div>
+
+      <div class="content__calculate__bill">
+        <label for="custom">Select tip %</label>
+        <div class="content__calculate__grid">
+          <div class="content__calculate__tip active" data-value="5">5%</div>
+          <div class="content__calculate__tip" data-value="10">10%</div>
+          <div class="content__calculate__tip" data-value="15">15%</div>
+          <div class="content__calculate__tip" data-value="25">25%</div>
+          <div class="content__calculate__tip" data-value="50">50%</div>
+          <div class="content__calculate__custom">
+            <input type="number" name="custom" id="custom" placeholder="Custom" min="0" max="100" onkeyup=disabledButton()>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__calculate__bill">
+        <label for="people">Number of People</label>
+        <i class="fas fa-user icon"></i>
+        <input type="number" class="calculate__input" id="people" name="people" min="0" onkeyup=disabledButton()>
+        <div class="message__error">
+          <p>Can´t be zero</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SECTION RESULT -->
+
+    <section class="content__result">
+
+      <div class="result__total">
+        <div class="result__total__tip">
+          <p>Tip amount</p>
+          <small>/ person</small>
+        </div>
+        <div class="result__total__bill" id="tipAmount">$0.00</div>
+      </div>
+
+      <div class="result__total">
+        <div class="result__total__tip">
+          <p>Total</p>
+          <small>/ person</small>
+        </div>
+        <div class="result__total__bill" id="total">$0.00</div>
+      </div>
+
+      <div>
+        <button type="submit" class="result__total__button" disabled>Reset</button>
+      </div>
+
+    </section>
+
+  </main>
+  
+</body>
+</html>

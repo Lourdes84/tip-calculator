@@ -1,0 +1,23 @@
+/** MOBILE VERSION **/
+
+@media (max-width: 830px) {
+    .content {
+        display: block;
+    }
+    .content__calculate__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .result__total__button {
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 831px) and (max-width: 1100px){
+    .content {
+        width: 80vw;
+    }
+}
+
+
+
